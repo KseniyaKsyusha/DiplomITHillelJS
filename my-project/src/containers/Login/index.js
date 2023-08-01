@@ -2,7 +2,7 @@ import './style.css';
 import Input from "../../components/Input"
 import Button from '../../components/Button';
 import HeaderLogo from '../../components/HeaderLogo';
-import logo from "../../assets/logo.png"
+// import logo from "../../assets/logo.png"
 
 
 const Login = () => {
