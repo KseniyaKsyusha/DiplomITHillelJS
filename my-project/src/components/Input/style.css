@@ -1,11 +1,5 @@
-.loginForm {
-    display: flex;
-    flex-direction: column;
+.loginInput {
 
-}
-
-.loginInput,
-.loginButton {
     width: 277px;
     height: 56px;
     box-sizing: border-box;
@@ -14,25 +8,6 @@
     border: none;
 }
 
-.eye_icon {
-    position: absolute;
-    font-size: 30px;
-    text-align: center;
-    line-height: 60px;
-    left: 69%;
-    color: #44B26F;
-    margin: 20px 0;
-    cursor: pointer;
-}
-
-.loginButton {
-    background-color: #44B26F;
-    color: white;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-}
 
 .loginInput::placeholder {
     font-style: normal;
@@ -83,7 +58,7 @@
 .pass-strength {
     display: flex;
     align-items: center;
-    margin-top: 3px;
+    /* margin-top: 3px; */
 }
 
 .strength-label {

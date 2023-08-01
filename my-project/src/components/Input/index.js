@@ -10,12 +10,9 @@ const Input = (props) => {
 
   const [percentBar, setPercentBar] = useState('');
   const [passInputChange, setPassInputChange] = useState('');
-  const [passInputClasses, setPassInputClasses] =
-    useState('loginInput');
+  const [passInputClasses, setPassInputClasses] = useState('loginInput');
   const [toggleIcon, setToggleIcon] = useState(<IoEyeOff />);
-  const [toggleIconClasses, setToggleIconClasses] = useState(
-    'toggle-icon-passive'
-  );
+  const [toggleIconClasses, setToggleIconClasses] = useState('toggle-icon-passive' );
   const [passLabel, setPassLabel] = useState('Strength');
   const [type, setType] = useState('password');
 
@@ -56,23 +53,19 @@ const Input = (props) => {
   if (isLoggedInput) {
 
     return (
-      <form className='loginForm'>
-
-        <input
+       <input
           id="login"
           name="login"
           type="text"
           placeholder="User name"
           className="loginInput"
-        />
-
-
-      </form>
+       />
+     
     );
 
   };
   return (
-    <form className='loginForm'>
+    <div>
       <div className='input-group'>
         <input
           type={type}
@@ -81,6 +74,7 @@ const Input = (props) => {
           value={passInputChange}
           onChange={handlePassInput}
         />
+       
         <span
           onClick={togglePassInput}
           className={`toggle ${toggleIconClasses}`}
@@ -88,17 +82,18 @@ const Input = (props) => {
           {toggleIcon}
         </span>
 
+      
       </div>
+      
       <div className='pass-strength'>
         <div className='strength-percent'>
-          <span className={percentBar}></span>
+           <span className={percentBar}></span>
         </div>
-        <span className='strength-label'>{passLabel}</span>
+         <span className='strength-label'>{passLabel}</span>
       </div>
 
-
-
-    </form>
+    </div>
+    
   );
 }
 
