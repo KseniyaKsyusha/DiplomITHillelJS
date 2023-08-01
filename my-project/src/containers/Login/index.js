@@ -8,15 +8,17 @@ import HeaderLogo from '../../components/HeaderLogo';
 const Login = () => {
 
     return (
-        <div className="containerLogin">
-            {/* <div className="containerLogo">
+        <form className='loginForm'>
+            <div className="containerLogin">
+                {/* <div className="containerLogo">
                 <img src={logo} className="loginLogo" alt="Rozetka logo" />
             </div> */}
-            <HeaderLogo/>
-            <Input isLoggedInput={true}/>
-            <Input isLoggedInput={false}/>
-            <Button />
-        </div>
+                <HeaderLogo />
+                <Input isLoggedInput={true} />
+                <Input isLoggedInput={false} />
+                <Button />
+            </div>
+        </form>
     )
 }
 

@@ -1,3 +1,9 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .loginLogo {
     width: 240px;
     height: 40px;
