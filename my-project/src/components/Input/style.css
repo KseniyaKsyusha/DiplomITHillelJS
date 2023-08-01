@@ -1,0 +1,138 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.loginInput,
+.loginButton {
+    width: 277px;
+    height: 56px;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.eye_icon {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    left: 69%;
+    color: #44B26F;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.loginButton {
+    background-color: #44B26F;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.loginInput::placeholder {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #44B26F;
+}
+
+.loginInput {
+    padding-left: 10px;
+    background-color: #f3f1f1;
+}
+
+/*  */
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    width: 277px;
+    height: 56px;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.input-group input::placeholder {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #44B26F;
+}
+
+.input-group .toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 99;
+}
+
+.pass-strength {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.strength-label {
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #44B26F;
+}
+
+.strength-percent {
+    flex: 1;
+    height: 5px;
+    border-radius: 10px;
+    display: block;
+    background: #eee;
+}
+
+.strength-percent span {
+    display: block;
+    height: 100%;
+    transition: all 0.4s;
+    border-radius: 10px;
+}
+
+.weak {
+    background: red;
+    width: 33%;
+}
+
+.average {
+    background: #ffd000;
+    width: 66%;
+}
+
+.strong {
+    background: green;
+    width: 100%;
+}
+
+.toggle-icon-active,
+.toggle-icon-passive {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    color: #44B26F;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    left: 69%;
+    margin: 20px 0;
+    cursor: pointer;
+}
