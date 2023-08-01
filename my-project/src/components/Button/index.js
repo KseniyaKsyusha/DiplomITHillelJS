@@ -2,13 +2,11 @@ import './style.css';
 
 
 const Button = () => {
- 
-  return (
-    <form className='loginForm'>
-               
-      <button type="submit" className="loginButton">Login</button>
 
-    </form>
+  return (
+    
+    <button type="submit" className="loginButton">Login</button>
+    
   );
 }
 
